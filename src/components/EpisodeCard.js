@@ -14,18 +14,20 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-export default function LocationCard({name, type, dimension}) {
+export default function EpisodeCard({episode}) {
     const classes = useStyles();
     return (
-        <Grid item xs={12} sm={6}>
+        <Grid item xs={12} >
             <Card >
                 <CardActionArea>
                     <CardContent>
                         <Typography variant="h5" component="h2">
-                            <p>{name}</p>
+                            <p>{episode}</p>
                         </Typography>
                         <Typography variant="body2" component="p">
-                            {type} - {dimension}
+                         {/*{episodes.map( item =>{*/}
+                         {/*    {item}*/}
+                         {/*})}*/}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
